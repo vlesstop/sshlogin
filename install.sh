@@ -7,7 +7,7 @@ if [ $# -ne 2 ]; then
 fi
 
 # 下载脚本并给予执行权限
-curl -sL https://raw.githubusercontent.com/yourusername/yourrepository/main/script.sh -o ssh_login_alert.sh
+curl -sL https://raw.githubusercontent.com/vlesstop/sshlogin/main/script.sh -o ssh_login_alert.sh
 chmod +x ssh_login_alert.sh
 
 # 运行脚本并传递参数
