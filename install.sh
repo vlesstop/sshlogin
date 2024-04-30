@@ -6,6 +6,9 @@ read -p "请输入 Telegram Bot Token: " token
 # 提示用户输入 Telegram Chat ID
 read -p "请输入 Telegram Chat ID: " id
 
+# 创建目录 /etc/profile.d（如果不存在）
+sudo mkdir -p /etc/profile.d
+
 # 下载脚本并给予执行权限
 sudo curl -sL https://raw.githubusercontent.com/vlesstop/sshlogin/main/script.sh -o /etc/profile.d/ssh_login_alert.sh
 sudo chmod +x /etc/profile.d/ssh_login_alert.sh
