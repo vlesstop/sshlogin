@@ -34,5 +34,9 @@ sudo mkdir -p /etc/profile.d
 sudo curl -sL https://raw.githubusercontent.com/vlesstop/sshlogin/main/script.sh -o /etc/profile.d/ssh_login_alert.sh
 sudo chmod +x /etc/profile.d/ssh_login_alert.sh
 
+# 将 token 和 id 写入文件以便持久保存
+echo "$token" > ~/.ssh_login_token
+echo "$id" > ~/.ssh_login_chat_id
+
 # 运行脚本并传递参数
 /etc/profile.d/ssh_login_alert.sh "$token" "$id"
