@@ -21,8 +21,10 @@ login_ip=$(echo $SSH_CONNECTION | awk '{print $1}')
 
 # 拼接通知消息，包含服务器主机名、登录IP地址、登录用户信息和最近登录信息
 message="🔔 发生SSH登录！
-🖥️ 服务器：${hostname} - ${local_ip}
-🔒 登录IP地址：(${login_ip})
+🖥️ 服务器：${hostname} 
+ ${local_ip}
+🔒 登录IP地址：
+(${login_ip})
 👤 登录用户信息：
 ${login_info}
 📅 最近登录信息：
